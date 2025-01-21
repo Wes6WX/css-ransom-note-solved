@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Piazzolla&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+15&family=Lavishly+Yours&family=Leckerli+One&family=Playwrite+VN:wght@100..400&display=swap");
 
 * {
   padding: 0;
@@ -51,7 +52,7 @@ body {
   transition: all 0.8s ease-in-out;
 }
 
-/* Sample CSS for the WHY word */
+/* CSS start for individual letters */
 
 .word > span:first-of-type:not(.vowels, :only-of-type) {
   font-size: 72px;
@@ -81,9 +82,9 @@ body {
   font-family: "Raleway Dots", sans-serif;
 }
 
-/* unique additions */
 [class*="ILetter"],
-[class*="LLetter"] {
+[class*="LLetter"],
+[class*="NLetter"] {
   font-family: "Playwrite VN", serif;
   font-optical-sizing: auto;
   font-weight: 100;
@@ -137,19 +138,27 @@ body {
 }
 
 [class*="NLetter"] {
+  color: navajowhite;
+  text-decoration: double line-through underline navy 0.3rem;
+  font-size: 19px;
+  text-transform: uppercase;
 }
 
 [class*="RLetter"] {
+  color: #639;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 44px;
+  font-style: italic;
+  font-weight: 400;
+  text-decoration: dashed line-through rosybrown;
 }
 
 [class*="VLetter"] {
-}
-/* DID word */
-
-.didDLetter {
-}
-
-.didILetter {
+  color: violet;
+  text-decoration: overline;
+  font-size: 37px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
 }
 
 .didDTwoLetter {
@@ -157,214 +166,44 @@ body {
   font-weight: 700;
 }
 
-/* THE word */
-
-.theTLetter {
+[class*="PLetter"] {
+  font-family: monospace;
+  font-size: 79px;
+  color: rgb(79, 7, 209);
+  text-transform: capitalize;
 }
 
-.theHLetter {
-}
-
-.theELetter {
-}
-
-/* FRONT-END word */
-
-.frontendFLetter {
-}
-
-.frontendRLetter {
-}
-
-.frontendOLetter {
-}
-
-.frontendNLetter {
-}
-
-.frontendTLetter {
-}
-
-.frontendELetter {
-}
-
-.frontendNTwoLetter {
-}
-
-.frontendDLetter {
-}
-
-/* DEVELOPER word */
-
-.developerDLetter {
-}
-.developerELetter {
-}
-.developerVLetter {
-}
-.developerETwoLetter {
-}
-.developerLLetter {
-}
-.developerOLetter {
-}
-.developerPLetter {
-}
-.developerEThreeLetter {
-}
-.developerRLetter {
-}
-
-/* TAKE word */
-
-.takeTLetter {
-}
-.takeALetter {
-}
 .takeKLetter {
-}
-.takeELetter {
-}
-
-/* UP word */
-
-.upULetter {
-}
-.upPLetter {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 9px;
+  font-weight: 900;
+  color: khaki;
+  text-decoration: wavy underline overline #949 9px;
 }
 
-/* GARDENING word */
-
-.gardeningGLetter {
-}
-.gardeningALetter {
-}
-.gardeningRLetter {
-}
-.gardeningDLetter {
-}
-.gardeningELetter {
-}
-.gardeningNLetter {
-}
-.gardeningILetter {
-}
-.gardeningNTwoLetter {
-}
-.gardeningGTwoLetter {
-}
-
-/* BECAUSE word */
-
-.becauseBLetter {
-}
-.becauseELetter {
-}
 .becauseCLetter {
+  font-family: cursive;
+  font-size: 73px;
+  text-decoration: wavy line-through 3px #7cb;
+  color: #bc7;
 }
-.becauseALetter {
-}
-.becauseULetter {
-}
+
 .becauseSLetter {
-}
-.becauseETwoLetter {
-}
-
-/* THEY word */
-
-.theyTLetter {
-}
-.theyHLetter {
-}
-.theyELetter {
-}
-.theyYLetter {
-}
-
-/* WANTED word */
-
-.wantedWLetter {
-}
-.wantedALetter {
-}
-.wantedNLetter {
-}
-.wantedTLetter {
-}
-.wantedELetter {
-}
-.wantedDLetter {
-}
-
-/* TO word */
-
-.toTLetter {
-}
-.toOLetter {
-}
-
-/* IMPROVE word */
-
-.improveILetter {
-}
-.improveMLetter {
-}
-.improvePLetter {
-}
-.improveRLetter {
-}
-.improveOLetter {
-}
-.improveVLetter {
-}
-.improveELetter {
-}
-
-/* THEIR word */
-
-.theirTLetter {
-}
-.theirHLetter {
-}
-.theirELetter {
-}
-.theirILetter {
-}
-.theirRLetter {
-}
-
-/* ROOT word */
-
-.rootRLetter {
-}
-.rootOLetter {
-}
-.rootOTwoLetter {
-}
-.rootTLetter {
-}
-
-/* SKILLS word */
-
-.skillsSLetter {
-}
-.skillsKLetter {
-}
-.skillsILetter {
-}
-.skillsLLetter {
-}
-.skillsLTwoLetter {
-}
-.skillsSTwoLetter {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 55px;
+  color: seashell;
+  text-decoration: wavy line-through seagreen;
+  font-weight: 500;
+  text-transform: capitalize;
 }
 
 /* SYMBOLS */
 
-.hyphen {
-}
-.exclamation-mark {
-}
+.hyphen,
+.exclamation-mark,
 .question-mark {
+  color: honeydew;
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
