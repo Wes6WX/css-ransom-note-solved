@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Piazzolla&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap");
 
 * {
   padding: 0;
@@ -53,33 +53,97 @@ body {
 
 /* Sample CSS for the WHY word */
 
-.whyWLetter {
+.word > span:first-of-type:not(.vowels, :only-of-type) {
   font-size: 72px;
   font-weight: bold;
   color: aqua;
   text-decoration: underline;
   text-transform: uppercase;
-  font-family: 'Piazolla', sans-serif;
+  font-family: "Piazolla", sans-serif;
 }
 
-.whyHLetter {
+.word > [class*="Letter"]:nth-of-type(2):not(.vowels) {
   font-size: 30px;
   font-weight: bold;
   color: darkgoldenrod;
   text-decoration: overline;
   text-transform: lowercase;
-  font-family: 'Ceviche One', sans-serif;
+  font-family: "Ceviche One", sans-serif;
 }
 
-.whyYLetter {
+[class*="YLetter"],
+.vowels {
   font-size: 60px;
   font-weight: normal;
   color: coral;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'Raleway Dots', sans-serif;
+  font-family: "Raleway Dots", sans-serif;
 }
 
+/* unique additions */
+[class*="ILetter"],
+[class*="LLetter"] {
+  font-family: "Playwrite VN", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  text-transform: lowercase;
+}
+
+[class*="OLetter"] {
+  font-family: "Jersey 15", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: lowercase;
+  font-size: 93px;
+}
+
+[class*="ELetter"],
+.vowels + .vowels {
+  font-family: "Lavishly Yours", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rebeccapurple;
+}
+
+[class*="TwoLetter"] {
+  font-family: "Leckerli One", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 0 0 30px #7532a8;
+  color: rgb(195, 0, 130);
+}
+
+[class*="TLetter"] {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 100;
+  color: #1e0863;
+  font-size: 50px;
+  text-decoration: dotted underline overline #d5ecf7;
+}
+
+[class*="DLetter"] {
+  color: dodgerblue;
+  font-size: 22px;
+  font-family: fantasy;
+}
+
+[class*="LLetter"] {
+  color: lawngreen;
+  font-size: 17px;
+  text-shadow: 7px 7px 17px lemonchiffon;
+}
+
+[class*="NLetter"] {
+}
+
+[class*="RLetter"] {
+}
+
+[class*="VLetter"] {
+}
 /* DID word */
 
 .didDLetter {
@@ -89,6 +153,8 @@ body {
 }
 
 .didDTwoLetter {
+  font-size: 30px;
+  font-weight: 700;
 }
 
 /* THE word */
